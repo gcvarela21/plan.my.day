@@ -8,17 +8,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" />
     <link rel="stylesheet" href="style.css" />
-    <title>Work Day Scheduler</title>
+    <title>Plan My Day</title>
 </head>
 
 <body>
     <header class="jumbotron">
-        <h1 class="display-3">Work Day Scheduler</h1>
-        <p class="lead">A simple calendar app for scheduling your work day</p>
-        <p id="currentDay" class="lead"></p>
+        <h1 id="blanco" >Plan My Day</h1>
+        <p id="blanco">9:00am -11:00pm Schedule</p>
+        <p id="blanco">For People Who Work A Little Later</p>
+        <p id="currentDay" class="blanco"></p>
     </header>
+
     <div class="container">
         <!-- Timeblocks go here -->
 
@@ -84,10 +86,55 @@
             <textarea class="description" placeholder="Message"></textarea>
             <button class="saveBtn" type="submit"><i class="far fa-save"></i></button>
         </div>
+
+        <!-- Timeblock 10: 6:00pm -->
+        <div class="row time-block justify-content-center" data-index="9">
+            <label class="hour pt-2" data-time="18">06:00 PM</label>
+            <textarea class="description" placeholder="Message"></textarea>
+            <button class="saveBtn" type="submit"><i class="far fa-save"></i></button>
+        </div>
+
+        <!-- Timeblock 11: 7:00pm -->
+        <div class="row time-block justify-content-center" data-index="10">
+            <label class="hour pt-2" data-time="19">07:00 PM</label>
+            <textarea class="description" placeholder="Message"></textarea>
+            <button class="saveBtn" type="submit"><i class="far fa-save"></i></button>
+        </div>
+
+        <!-- Timeblock 12: 8:00pm -->
+        <div class="row time-block justify-content-center" data-index="11">
+            <label class="hour pt-2" data-time="20">08:00 PM</label>
+            <textarea class="description" placeholder="Message"></textarea>
+            <button class="saveBtn" type="submit"><i class="far fa-save"></i></button>
+        </div>
+        <!-- Timeblock 13: 9:00pm -->
+        <div class="row time-block justify-content-center" data-index="12">
+            <label class="hour pt-2" data-time="21">09:00 PM</label>
+            <textarea class="description" placeholder="Message"></textarea>
+            <button class="saveBtn" type="submit"><i class="far fa-save"></i></button>
+        </div>
+        <!-- Timeblock 14: 10:00pm -->
+        <div class="row time-block justify-content-center" data-index="13">
+            <label class="hour pt-2" data-time="22">10:00 PM</label>
+            <textarea class="description" placeholder="Message"></textarea>
+            <button class="saveBtn" type="submit"><i class="far fa-save"></i></button>
+        </div>
+        <!-- Timeblock 15: 11:00pm -->
+        <div class="row time-block justify-content-center" data-index="14">
+            <label class="hour pt-2" data-time="23">11:00 PM</label>
+            <textarea class="description" placeholder="Message"></textarea>
+            <button class="saveBtn" type="submit"><i class="far fa-save"></i></button>
+        </div>
+
+        <div class="row">
+            <div class="space"></div>
+        </div>
+
     </div>
-    <script src="app.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
