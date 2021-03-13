@@ -1,2 +1,3 @@
 # plan.my.day
-day planner
+
+A day planner
